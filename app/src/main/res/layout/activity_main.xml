@@ -6,15 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
-        android:text="@string/btn_do_smth"
-        app:layout_constraintBottom_toTopOf="@+id/tvMain"
-        app:layout_constraintEnd_toEndOf="@+id/tvMain"
-        android:onClick="OnBtnclick"/>
+
 
     <TextView
         android:id="@+id/tvMain"
@@ -27,5 +19,28 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.595" />
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
+        android:onClick="OnBtnclick"
+        android:text="@string/btn_do_smth"
+        app:layout_constraintBottom_toTopOf="@+id/tvMain"
+        app:layout_constraintEnd_toStartOf="@+id/tvMain"
+        app:layout_constraintEnd_toEndOf="@+id/tvMain"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="To change color"
+        android:textColor="@drawable/button_text_color"
+        android:onClick="BtnClick2"
+        app:layout_constraintStart_toStartOf="@+id/tvMain"
+        app:layout_constraintEnd_toEndOf="@+id/tvMain"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
